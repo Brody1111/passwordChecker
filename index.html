@@ -7,6 +7,8 @@
 
 
     <script type="text/javascript">
+      const title = document.getElementById("title);
+      title.style.color = "red";
       function checkNumber(password) {
          var index = /[0123456789]/
            if(index.test(password)) {return true}
@@ -80,9 +82,7 @@ document.getElementById("Return").innerHTML = answer;
 
     </script>
       <style media="screen">
-      header {
-        color: Red;
-        }
+     
       body{
         background-color: LightGray;
         font-family: 'Georgia';
@@ -96,7 +96,9 @@ document.getElementById("Return").innerHTML = answer;
        </style>
       </head>
  <body>
-   <h1> Password Checker</h1>
+   <div id = "title">
+   <h1> Password Checker</h1>\
+   </div>
     <img src="lock.png" alt=""> <br>
    <label>Enter your password here: </label><br>
    <input type="text" id="Input" oninput = "checkOverall()"">
